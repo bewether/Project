@@ -10,18 +10,39 @@ public class PlayerControl : MonoBehaviour
     public float dashTime = 1f; // время после ускорения
     private bool isGrounded; // проверка находится ли персонаж на земле
     private bool isDashing; // проверка, находится ли персонаж в состоянии ускорения
+    public Animator anim;
 
     private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         rb.MovePosition(transform.position + movement * Time.deltaTime * moveSpeed);
+
+        // Устанавливаем значение "moveX" в единицу, если есть горизонтальное движение
+        if (Mathf.Abs(movement.x) > 0.01f)
+        {
+            anim.SetFloat("moveX", 1f);
+            // Отзеркаливаем персонажа по горизонтали в зависимости от направления
+            if (movement.x > 0)
+            {
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            else if (movement.x < 0)
+            {
+                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+        }
+        else
+        {
+            anim.SetFloat("moveX", 0f);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
