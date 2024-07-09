@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\GameDev\\game\\Project\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|d:\\gamedev\\game\\project\\project\\assets\\script\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|D:\\GameDev\\game\\Project\\Project\\assets\\script\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GameDev\\game\\Project\\Project\\Assets\\Script\\dg_simpleCamFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\dg_simpleCamFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dg_simpleCamFollow.cs",
+              "DocumentMoniker": "D:\\GameDev\\game\\Project\\Project\\Assets\\Script\\dg_simpleCamFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\dg_simpleCamFollow.cs",
+              "ToolTip": "D:\\GameDev\\game\\Project\\Project\\Assets\\Script\\dg_simpleCamFollow.cs",
+              "RelativeToolTip": "Assets\\Script\\dg_simpleCamFollow.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:52:59.16Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +39,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerControl.cs",
               "ToolTip": "D:\\GameDev\\game\\Project\\Project\\Assets\\Script\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerControl.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAwwCwAAAAJAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAIwDcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T14:05:49.988Z",
               "EditorCaption": ""

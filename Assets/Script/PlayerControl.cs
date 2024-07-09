@@ -47,11 +47,23 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(new Vector3(0f, jumpForce, 0f), ForceMode.Impulse);
+            anim.SetTrigger("jump");
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing)
+        if (Input.GetKeyDown(KeyCode.X) && !isDashing)
         {
             StartCoroutine(Dash(movement));
+            anim.SetTrigger("dash");
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = 70f; // Увеличиваем скорость движения для бега
+            anim.SetFloat("moveX", 2f); // Активируем анимацию бега
+        }
+        else
+        {
+            moveSpeed = 20f; // Возвращаем обычную скорость движения
         }
     }
 
